@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {% include themes/bootstrap-3/head.html %}
+    </head>
+
+    <body>
+
+        <div id="wrap">
+
+            <!-- header with navigation bar, etc.. -->
+            {% include themes/bootstrap-3/masthead.html %}
+
+            <!-- main elements -->
+           {{content}}
+
+        </div> <!-- End div wrap -->
+
+        <!-- foot -->
+        {% include themes/bootstrap-3/footer.html %}
+
+        <!-- backend elements -->
+        {% include JB/analytics %}
+        {% include themes/bootstrap-3/script_loader.html %}
+
+    </body>
+</html>

@@ -1,3 +1,13 @@
+img[alt$="-fullwidth"]{ 
+  width:  100%; 
+  display: block;
+}
+
+img[alt$="-halfwidth"]{ 
+  width:  50%; 
+  display: block;
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -475,6 +485,25 @@ html {
     text-align: justify;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.par-ubuntu h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #333333;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.par-ubuntu h2{
+    font-size: 13pt;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    margin-left: 10px;
+    color: #f46f1b;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f4c7ab;
+    width: 150px;
 }
 
 .section-benchmark{

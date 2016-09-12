@@ -2,13 +2,14 @@
 <html lang="en">
 
     <head>
-        {% include themes/i2cvb/head.html %}
+        {% include themes/bootstrap-3/head.html %}
     </head>
 
     <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
     <body id="page-top" data-spy="scroll" data-target="">
 
-        {% include themes/i2cvb/masthead.html %}
+        <!-- header with navigation bar, etc.. -->
+        {% include themes/bootstrap-3/masthead.html %}
 
         <div class="container-fluid container-body">
             <div class="row">
@@ -25,25 +26,15 @@
                 </div> <!-- End right-side-bar -->
 
             </div> <!-- End row -->
+        </div> <!-- End container -->
 
-            <div class="row">
 
-                <div class="left-side-bar col-sm-2">
-                </div> <!-- End left-side-bar -->
+            <!-- foot -->
+            {% include themes/bootstrap-3/footer.html %}
 
-                <div class="main-body col-sm-8">
-                    {% include themes/i2cvb/contacts.html %}
-                </div><!-- End main body -->
-
-                <div class="right-side-bar col-sm-2">
-                </div> <!-- End right-side-bar -->
-
-            </div> <!-- End row -->
-
-        </div> <!-- End container-fluid -->
-
-        {% include themes/i2cvb/load_scripts.html %}
+            <!-- backend elements -->
+            {% include JB/analytics %}
+            {% include themes/bootstrap-3/script_loader.html %}
 
     </body>
-
 </html>
